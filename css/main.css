@@ -103,10 +103,134 @@ textarea {
 = =                                                                       = =
 = =                                                                       = =
    ========================================================================== */
+body{
+  background-image: url(../img/fond.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+}
+
+
+    /*font-family: 'Quicksand', sans-serif;
+
+    font-family: 'Amatic SC', cursive;
+
+    font-family: 'Archivo Black', sans-serif;*/
 
 
 
 
+
+/*~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~*/
+.navbutton{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  height: 30px;
+  margin: 0;
+}
+
+header nav a{
+  width: 100%;
+  margin:0;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-size: 12px;
+}
+
+header nav{
+  height: 100px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+}
+/*~~~~~~~~~~~~~~~ END HEADER ~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~ WELCOME ~~~~~~~~~~~~~~~*/
+ .welcome{
+   width: 60%;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .welcome p{
+   font-family: 'Amatic SC', cursive;
+   font-weight: bold;
+   font-size: 4em;
+   color: white;
+ }
+/*~~~~~~~~~~~~~~~ END WELCOME ~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~ FLO ~~~~~~~~~~~~~~~*/
+h1{
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+/*~~~~~~~~~~~~~~~ END FLO ~~~~~~~~~~~~~~~*/
+
+
+
+
+
+@media (min-width:360px){
+
+  /*~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~*/
+  .navbutton{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    height: 30px;
+    margin: 0;
+  }
+
+  header nav a{
+    width: 25%;
+    margin:0;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+  }
+
+  header nav{
+    height: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+  }
+  /*~~~~~~~~~~~~~~~ END HEADER ~~~~~~~~~~~~~~~*/
+
+
+  /*~~~~~~~~~~~~~~~ WELCOME ~~~~~~~~~~~~~~~*/
+   .welcome{
+     width: 60%;
+     margin: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .welcome p{
+     font-family: 'Amatic SC', cursive;
+     font-weight: bold;
+     font-size: 4em;
+     color: white;
+   }
+  /*~~~~~~~~~~~~~~~ END WELCOME ~~~~~~~~~~~~~~~*/
+
+  /*~~~~~~~~~~~~~~~ FLO ~~~~~~~~~~~~~~~*/
+  h1{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+  }
+  /*~~~~~~~~~~~~~~~ END FLO ~~~~~~~~~~~~~~~*/
+
+}
 
 
 
