@@ -103,7 +103,19 @@ textarea {
 = =                                                                       = =
 = =                                                                       = =
    ========================================================================== */
-body{
+
+
+   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+   /*                                                                         */
+   /*                                                                         */
+   /*                                                                         */
+   /*                                  INDEX                                  */
+   /*                                                                         */
+   /*                                                                         */
+   /*                                                                         */
+   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.bodyindex{
   background-image: url(../img/fond.svg);
   background-repeat: no-repeat;
   background-size: 100% 100vh;
@@ -111,9 +123,34 @@ body{
 
 
 /*~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~*/
-header ul{
+.navtabletdesktop{
+  display: none;
+}
+
+.navmobile{
+  background-color: green;
+  position: fixed;
+  z-index: 2;
+}
+
+.burger{
+  width: 40px;
+  height: auto;
+  margin: 20px;
+}
+
+.navmobiletext{
+  background-color: blue;
+}
+
+.navmobiletext ul{
   list-style: none;
 }
+
+.burger:focus .navmobiletext{
+  height: 0;
+}
+
 
 /*~~~~~~~~~~~~~~~ END HEADER ~~~~~~~~~~~~~~~*/
 
@@ -253,12 +290,21 @@ header{
   align-items: center;
 }
 
-header ul{
+.navtabletdesktop{
+  display: inline-block;
+}
+
+.navtabletdesktop {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
   margin: 0;
+  list-style: none;
+}
+
+.navmobile{
+  display: none;
 }
 
 header ul li a{
@@ -403,6 +449,24 @@ header ul li a:hover{
 }
 /*~~~~~~~~~~~~~~~ END FLO ~~~~~~~~~~~~~~~*/
 }
+
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*                                                                         */
+/*                                                                         */
+/*                                                                         */
+/*                                  MY WORK                                */
+/*                                                                         */
+/*                                                                         */
+/*                                                                         */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+
 
    /* ==========================================================================
    = =                                                                       = =

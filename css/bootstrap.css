@@ -3786,7 +3786,6 @@ tbody.collapse.show {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
 }
@@ -3866,8 +3865,7 @@ tbody.collapse.show {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #464a4c;
-  background-color: #fff;
-  border-color: #ddd #ddd #fff;
+  border-color: #ddd #ddd;
 }
 
 .nav-tabs .dropdown-menu {
@@ -3882,7 +3880,6 @@ tbody.collapse.show {
 
 .nav-pills .nav-link.active,
 .nav-pills .nav-item.show .nav-link {
-  color: #fff;
   cursor: default;
   background-color: #0275d8;
 }
