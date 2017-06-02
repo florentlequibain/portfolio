@@ -110,129 +110,299 @@ body{
 }
 
 
-    /*font-family: 'Quicksand', sans-serif;
-
-    font-family: 'Amatic SC', cursive;
-
-    font-family: 'Archivo Black', sans-serif;*/
-
-
-
-
-
 /*~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~*/
-.navbutton{
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  height: 30px;
-  margin: 0;
+header ul{
+  list-style: none;
 }
 
-header nav a{
-  width: 100%;
-  margin:0;
-  font-family: 'Quicksand', sans-serif;
-  color: white;
-  font-size: 12px;
-}
-
-header nav{
-  height: 100px;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: auto;
-}
 /*~~~~~~~~~~~~~~~ END HEADER ~~~~~~~~~~~~~~~*/
 
 
 /*~~~~~~~~~~~~~~~ WELCOME ~~~~~~~~~~~~~~~*/
- .welcome{
-   width: 60%;
-   margin: auto;
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
+.welcomeanimcontainer{
+  display: none;
+}
 
- .welcome p{
-   font-family: 'Amatic SC', cursive;
-   font-weight: bold;
-   font-size: 4em;
-   color: white;
- }
+.welcomeanimcontainermobile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.lettermobile1, .lettermobile2, .lettermobile3, .lettermobile4, .lettermobile5, .lettermobile6, .lettermobile7{
+  height: 90px;
+  width: auto;
+}
+
+.welcomeanimmobile{
+  width: 320px;
+  overflow: hidden;
+}
+
+.lettermobile1{
+  visibility: hidden;
+  position: relative;
+  animation-name: transition_mobile;
+  animation-duration: 6s;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.lettermobile2{
+  visibility: hidden;
+  position: relative;
+  animation-name: transition_mobile;
+  animation-duration: 6s;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.lettermobile3{
+  visibility: hidden;
+  position: relative;
+  animation-name: transition_mobile;
+  animation-duration: 6s;
+  animation-delay: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.lettermobile4{
+  visibility: hidden;
+  position: relative;
+  animation-name: transition_mobile;
+  animation-duration: 6s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.lettermobile5{
+  visibility: hidden;
+  position: relative;
+  animation-name: transition_mobile;
+  animation-duration: 6s;
+  animation-delay: 0.6s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.lettermobile6{
+  visibility: hidden;
+  position: relative;
+  animation-name: transition_mobile;
+  animation-duration: 6s;
+  animation-delay: 3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.lettermobile7{
+  visibility: hidden;
+  position: relative;
+  animation-name: transition_mobile;
+  animation-duration: 6s;
+  animation-delay: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes transition_mobile {
+  from{
+    left: -360px;
+    visibility: visible;
+  }
+
+  to{
+    left: 0px;
+    visibility: visible;
+  }
+}
+
+
+
 /*~~~~~~~~~~~~~~~ END WELCOME ~~~~~~~~~~~~~~~*/
 
+
 /*~~~~~~~~~~~~~~~ FLO ~~~~~~~~~~~~~~~*/
-h1{
+.flo{
   color: white;
-  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 5px;
+  font-size: 1.6em;
 }
 /*~~~~~~~~~~~~~~~ END FLO ~~~~~~~~~~~~~~~*/
 
 
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~ @MEDIA 650px ~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
-@media (min-width:360px){
 
-  /*~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~*/
-  .navbutton{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    height: 30px;
-    margin: 0;
-  }
-
-  header nav a{
-    width: 25%;
-    margin:0;
-    font-family: 'Quicksand', sans-serif;
-    color: white;
-  }
-
-  header nav{
-    height: 30px;
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-  }
-  /*~~~~~~~~~~~~~~~ END HEADER ~~~~~~~~~~~~~~~*/
-
-
-  /*~~~~~~~~~~~~~~~ WELCOME ~~~~~~~~~~~~~~~*/
-   .welcome{
-     width: 60%;
-     margin: auto;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-
-   .welcome p{
-     font-family: 'Amatic SC', cursive;
-     font-weight: bold;
-     font-size: 4em;
-     color: white;
-   }
-  /*~~~~~~~~~~~~~~~ END WELCOME ~~~~~~~~~~~~~~~*/
-
-  /*~~~~~~~~~~~~~~~ FLO ~~~~~~~~~~~~~~~*/
-  h1{
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-  }
-  /*~~~~~~~~~~~~~~~ END FLO ~~~~~~~~~~~~~~~*/
-
+@media (min-width:650px){
+/*~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~*/
+header{
+  height: 70px;
+  display: flex;
+  align-items: center;
 }
 
+header ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+}
 
+header ul li a{
+  color:white;
+  font-size: 1.2em;
+  padding: 10px;
+  transition:0.3s;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 4px;
+}
+
+header ul li a:hover{
+  text-decoration: none;
+  transition:0.2s;
+  top: -2px;
+  color: white;
+  border-bottom: solid 2px rgb(255,202,58);
+}
+
+/*~~~~~~~~~~~~~~~ END HEADER ~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~ WELCOME ~~~~~~~~~~~~~~~*/
+.welcomeanimcontainermobile{
+  display: none;
+}
+
+.welcomeanimcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+}
+
+.letter1{
+  visibility: hidden;
+  position: relative;
+  animation-name: transition_1;
+  animation-duration: 6s;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.letter2{
+  visibility: hidden;
+  position: relative;
+  animation-name: transition_1;
+  animation-duration: 6s;
+  animation-delay: 4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.letter3{
+  visibility: hidden;
+  position: relative;
+  animation-name: transition_1;
+  animation-duration: 6s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.letter4{
+  visibility: hidden;
+  position: relative;
+  animation-name: transition_1;
+  animation-duration: 6s;
+  animation-delay: 3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.letter5{
+  visibility: hidden;
+  position: relative;
+  animation-name: transition_1;
+  animation-duration: 6s;
+  animation-delay: 1.6s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.letter6{
+  visibility: hidden;
+  position: relative;
+  animation-name: transition_1;
+  animation-duration: 6s;
+  animation-delay: 5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.letter7{
+  visibility: hidden;
+  position: relative;
+  animation-name: transition_1;
+  animation-duration: 6s;
+  animation-delay: 1.7s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes transition_1 {
+  from{
+    top: -360px;
+    visibility: visible;
+  }
+
+
+  33%{
+    top: -236px;
+  }
+
+  66%{
+    top: -120px;
+  }
+
+  to{
+    top: -2px;
+    visibility: visible;
+  }
+}
+
+.welcomeanim{
+  height: 115px;
+  overflow: hidden;
+}
+
+.letter1, .letter2, .letter3, .letter4, .letter5, .letter6, .letter7{
+  width:auto;
+  height: 350px;
+}
+/*~~~~~~~~~~~~~~~ END WELCOME ~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~ FLO ~~~~~~~~~~~~~~~*/
+.flo{
+  font-size: 2em;
+}
+/*~~~~~~~~~~~~~~~ END FLO ~~~~~~~~~~~~~~~*/
+}
 
    /* ==========================================================================
    = =                                                                       = =
